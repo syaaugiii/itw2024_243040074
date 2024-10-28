@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="link.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link href="link" rel="stylesheet" type="text/CSS">
+</head>
+<body>
+    <h1>CSS - Cascading style Sheet</h1>
+    <p> CSS adalah suatu style yang digunakan untuk keterampilan elemen HTML.</p>
+    
+</body>
+</html>

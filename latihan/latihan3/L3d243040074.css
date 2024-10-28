@@ -1,0 +1,46 @@
+body {
+    background-image: url(backgroundblue.png);
+    background-repeat: repeat-x;
+    background-color: white;
+    font-family: Georgia;
+}
+h1 {
+    font-family: Comic Sans MS;
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+h4 {
+    font-style: italic;
+}
+p {
+    text-align: justify;
+}
+h3 a {
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+}
+h3 a:hover {
+    text-decoration: none;
+    color: rgb(0, 255, 17);
+}
+h4, h3 {
+    text-align: center;
+}
+.p1 {
+    color: orange;
+    text-align: center;
+}
+.p2 {
+    text-align: right;
+    line-height: 2rem;
+    text-indent: 10%;
+}
+.p2 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.p2 a:hover {
+    background-color: blue;
+    color: white;
+}

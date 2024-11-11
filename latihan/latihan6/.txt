@@ -1,0 +1,5 @@
+background:repeating radial-gradient(circle at center center,transparent)
+background-size :53px 53px;
+#E0E1E3
+
+<p>strong>racism/strong>is a strong>pandemic</strong<>/p>

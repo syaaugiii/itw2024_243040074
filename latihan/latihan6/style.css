@@ -1,0 +1,132 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    min-height: 100vh;
+    background: repeating-radial-gradient(circle at center center,transparent);
+    background-size: 53px 53px;
+    font-family: 'sego ui', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #E0E1E3;
+}
+a{
+    color: inherit;
+}
+
+a.open{
+    width: 16em;
+    height: 16em;
+    position: relative;
+    margin: 2em;
+}
+a.open img {
+    border-radius: 50%;
+}
+
+img {
+    width:inherit;
+    height: inherit;
+    object-fit: cover;
+}
+a.open img{
+    border-radius: 50%;
+}
+a.open::before{
+    position: absolute;
+    content: '';
+    border: solid 2px;
+    transition: .3s ease;
+}
+
+.open:nth-last-of-type(odd)::before{
+    width: 14em;
+    height: 14em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a.open:nth-last-of-type(even)::before{
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+}
+
+a.open:nth-last-of-type(2)::before{
+    bottom: 7%;
+}
+a.open:nth-last-of-type(4)::before{
+    left: 7%;
+}
+a.open:nth-last-of-type(6)::before{
+    right: 7%;
+}
+
+a.open ::after{
+    position: absolute;
+    content: '';
+    background: tomato;
+    border-radius: 50%;
+    width: .3em;
+    height: .3em;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20%;
+    transition: .3s ease;
+}
+a.open:hover::after{
+
+    box-shadow: .6em 0 tomato,
+                -.6em 0 tomato
+                0 -.em tomato
+                0 .6em tomato
+                
+}
+
+p{
+    font-size: 2vw;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+}
+p.strong{
+    font-size: 3em;
+    color: tomato;
+}
+
+a.close:not(:target){
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease;
+}
+
+a.close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+a.close:target{
+    opacity: 1;
+    visibility: visible;
+    transition: .5s ease;
+}
+
+
+@media screen and (max-width:927px) {
+    p{
+        order: -1;
+        margin: 2em;
+    }
+}

@@ -20,7 +20,7 @@ nav {
 }
 
 nav .logo {
-    font-family:"Pacifico", cursive;
+    font-family:'Pacifico',cursive;
     letter-spacing: 3px;
 }
 
@@ -119,7 +119,7 @@ nav ul li a:hover {
         display: flex;
     }
     nav ul {
-        position: absolute;
+        position:absolute;
         right: 0;
         top: 0;
         width: 80%;
@@ -131,15 +131,15 @@ nav ul li a:hover {
         z-index: -1;
         transform: translateX(100%);
         transition: all 1s;
-        opacity: 0;
+
     }
 
-
-    nav ul.slide {
-        opacity: 1;
+    nav u.slide {
         transform: translateX(0);
-
     }
+
+
+    
 }
     
 
